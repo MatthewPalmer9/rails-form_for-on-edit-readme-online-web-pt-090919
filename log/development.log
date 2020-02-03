@@ -1282,3 +1282,12 @@ Redirected to http://167.99.15.173:60600/posts/6
 Completed 302 Found in 14ms (ActiveRecord: 10.2ms)
 
 
+Started GET "/posts/6" for 75.13.83.97 at 2020-02-03 05:36:02 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
