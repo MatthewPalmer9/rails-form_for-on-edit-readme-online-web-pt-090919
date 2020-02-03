@@ -879,3 +879,12 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/posts/2" for 75.13.83.97 at 2020-02-03 05:10:42 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 0.5ms)
+
+
